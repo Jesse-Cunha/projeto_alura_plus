@@ -1,0 +1,235 @@
+:root{
+
+    /* aqui vamos criar as variáveis que facilitarão a atribuição das cores */
+    --branco-principal: #FFFFFF;
+    --branco-secundario: #F9F9F9;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --botao-azul-efeito: #528ace;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: "Inter";
+}
+
+*{
+
+    /* pegando todos os elementos e zerando a margem e o padding */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* lembrar que para selecionar classes usa-se o ponto: */
+.principal{
+
+    /* colocando a imagem de fundo: */
+    background-image: url(img/Background.png);
+    /* a imagem estava se repetindo em parte, então  */
+    /* forçamos a não repetição: */
+    background-repeat: no-repeat;
+    /* a imagem estava deslocada pra esquerda, então usamos
+    esse valor 'cover' do background-size para ajustar */
+    background-size: contain;
+    /* centralizando os elementos dentro do grid: */
+    align-items: center;
+    /* centralizando os elementos verticalmente: */
+    text-align: center;
+}
+
+.container{
+
+    /* aqui, controlamos o tamanho vertical de nossas sections de acordo com a tela do navegador do dispositivo do usuário: */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa{
+
+    margin: 0 6em;
+
+}
+
+.container__titulo{
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.principal__imagem{
+
+    margin: 1em 0 2em 0;
+
+}
+
+.container__botao{
+
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    border: 0.1em solid var(--botao-azul);
+    /* lembrar que "em" é uma unidade relativa à fonte do elemento pai */
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao--primario:hover{
+
+    background-color: var(--botao-azul-efeito);
+    border: 0.1em solid var(--branco-secundario);
+    
+
+}
+
+.botao--secundario{
+
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.botao--secundario:hover{
+
+    background-color: var(--branco-secundario);
+    color: black;
+    border: 2px solid black;
+    
+}
+.secundario__botao:hover{
+    
+    background-color: var(--botao-azul-efeito);
+    border: 0.1em solid var(--branco-secundario);
+
+
+}
+.container__aviso{
+
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.secundario{
+
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem{
+
+    width: 80%
+}
+
+.descricao__titulo{
+
+    color: var(--branco-principal);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+
+    color: var(--cinza-secundario);
+    font-size: 16px;
+}
+
+.secundario__botao{
+
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+
+    padding: 2em;
+}
+
+#imagem_telas{
+
+    padding: 0 0 0 6em;
+}
+
+.dispositivos{
+
+    text-align: center;
+    height: 60vh;
+}
+
+.dispositivos__titulo{
+
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+.dispositivos__lista{
+
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 32px;
+    color: var(--branco-principal);
+    margin: 3em 0;
+}
+
+.rodape{
+
+    text-align: center;
+    margin: 0 0 3em 0;
+}
+.rodape__logo{
+
+    margin: 1em 0;
+}
+.rodape__lista{
+
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 2em 0 3em 0;
+
+}
+
+.lista__link{
+
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin: 0 2em;
+}
+
+.lista__link a{
+
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.lista__link a:hover{
+
+    color: var(--botao-azul);
+   
+}
+
+.lista__link a:active{
+
+    color: #785589;
+}
+.rodape__texto{
+
+    margin: 2em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.texto__2{
+
+    text-align: center;
+    padding: 0 20em;
+}
