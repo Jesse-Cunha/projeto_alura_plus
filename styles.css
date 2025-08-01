@@ -234,14 +234,3 @@ body{
     padding: 0 20em;
 }
 
-footer.rodape {
-    background-color: red;
-    position: relative;
-    z-index: 1;
-}
-
-section.dispositivos {
-    background-color: green;
-    position: relative;
-    z-index: 2;
-}
