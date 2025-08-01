@@ -154,18 +154,24 @@ body{
 
 #imagem_telas{
 
+
     padding: 0 0 0 6em;
 }
 
 .secao__final{
 
-    max-height: 100vh;
-
+    margin: 0 0 0 3em;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
 }
+
 .dispositivos{
 
     text-align: center;
     padding: 2em 0 0 0;
+    height: 50%;
 }
 
 .dispositivos__titulo{
@@ -186,7 +192,8 @@ body{
 .rodape{
 
     text-align: center;
-    margin: 0 0 3em 0;
+    margin: 3em 0;
+    height: 50%;
 }
 .rodape__logo{
 
