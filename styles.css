@@ -245,6 +245,7 @@ body{
         background-image: none;
         height: 60vh;
         border-bottom: 0.1em solid var(--branco-principal);
+        align-items: center;
     }
     .principal__imagem{
 
@@ -257,6 +258,7 @@ body{
     .secundario{
         margin: 0;
         text-align: center;
+        align-items: center;
     }
     .secundario__imagem{
 
