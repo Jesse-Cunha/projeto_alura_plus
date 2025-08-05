@@ -244,6 +244,7 @@ body{
         display: block;
         background-image: none;
         height: 60vh;
+        border-bottom: 0.1em solid var(--branco-principal);
     }
     .principal__imagem{
 
@@ -260,6 +261,10 @@ body{
     .secundario__imagem{
 
         width: 50vw;
+    }
+    .dispositivos{
+
+        border-bottom: 0.1em solid var(--branco-principal);
     }
     .dispositivos__lista{
         display: block;
